@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div>
+<style>
+body{
+  background-image: url(../static/userlogin.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size : cover;
+  background-color: white;
+  background-repeat: no-repeat;
+  margin: 30px;
+  font-size: 150%;
+}
+</style>
+</div>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<h1>USER REGISTRATION</h1>
+<body style="background-color:powderblue;">
+<div>
+<form action="/createuser" method="post">
+    <label>NAME: </label>
+    <input name="name" type="text" id="name"><br><br>
+    <label>USERNAME: </label>
+    <input name="uname" type="text" id="uname"><br><br>
+    <!label>VEHICLE NUMBER: <!/label>
+    <input name="vno" type="text" id="vno"><br><br>
+    <label>PHONE NUMBER: </label>
+    <input name="phno" type="text" id="phno"><br><br>
+    <label>PASSWORD: </label>
+    <input type="password" value="password" id="password"><br><br>
+<input type="checkbox" onclick="myFunction()"> Show Password
+
+<script>
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script><br><br>
+    <!-------------->
+    <input type="submit" value="REGISTER">
+    <div>
+        <br><br>
+        <label>Already an User? Login Here!</label>
+        <a href="/login"><button type="button" onclick=<a href="/login">Login</button></a>
+
+</div>
+</form>
+</body>
+</html>

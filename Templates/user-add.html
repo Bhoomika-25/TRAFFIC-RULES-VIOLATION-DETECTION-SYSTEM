@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h2>Add Violation</h2>
+<style>
+h1   {color: black; font-size: 50px;}
+body{
+  background-image: url(../static/addvoilation-police.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size : cover;
+  background-color: white;
+  background-repeat: no-repeat;
+  margin: 30px;
+  font-size: 150%;
+}
+</div>
+</style>
+</head>
+<body>
+    <h3>Violated Users</h3>
+    <form action = "/savedetails" method="post">
+    <td>
+        <tr><td>Violation: </td><td><input type="text" name="viol"></td></tr><br><br>
+        <tr><td>Vehicle Number: </td><td><input type="text" name="vno"></td></tr><br><br>
+        <tr><td><input type="submit" value="Submit"></td></tr>
+    </td>
+    </table>
+    </form>
+</body>
+</html>

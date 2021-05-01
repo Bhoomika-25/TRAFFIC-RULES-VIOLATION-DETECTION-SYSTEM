@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1   {color: black; font-size: 50px;}
+body{
+  background-image: url(../static/challan.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size : cover;
+  background-color: white;
+  background-repeat: no-repeat;
+  margin: 30px;
+  font-size: 150%;
+}
+</div>
+</style>
+</head>
+<body>
+<h3>Challan Information</h3>
+<table border=5>
+    <thead>
+        <td>ID</td>
+        <td>Vehicle Number</td>
+        <td>Violation</td>
+    <td>Amount</td>
+    </thead>
+
+    {% for row in rows %}
+
+        <tr>
+            <td>{{row["id"]}}</td>
+            <td>{{row["vechno"]}}</td>
+            <td>{{row["viola"]}}</td>
+            <td>{{row["amt1"]}}</td>
+        </tr>
+
+    {% endfor %}
+</table>
+<br><br>
+
+<a href="/search">Go Back</a>
+
+</body>
+</html>

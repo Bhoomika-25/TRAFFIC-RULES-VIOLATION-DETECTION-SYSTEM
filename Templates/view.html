@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1   {color: black; font-size: 50px;}
+body{
+  background-image: url(../static/addvoilation-police.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size : cover;
+  background-color: white;
+  background-repeat: no-repeat;
+  margin: 30px;
+  font-size: 150%;
+}
+</div>
+</style>
+</head>
+<body>
+<h3>Violation Information</h3>
+<table border=5>
+    <thead>
+        <td>ID</td>
+        <td>Vehicle Number</td>
+        <td>Violation</td>
+    </thead>
+
+    {% for row in rows %}
+
+        <tr>
+            <td>{{row["id"]}}</td>
+            <td>{{row["vno"]}}</td>
+            <td>{{row["viol"]}}</td>
+        </tr>
+
+    {% endfor %}
+</table>
+<br><br>
+
+<a href="/add">Go Back</a>
+
+</body>
+</html>
